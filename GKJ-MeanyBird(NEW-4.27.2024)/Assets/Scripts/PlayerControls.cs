@@ -36,4 +36,5 @@ public class PlayerControls : MonoBehaviour
             rb.velocity = Vector2.up * velocity;
         }
     }
+
 }
