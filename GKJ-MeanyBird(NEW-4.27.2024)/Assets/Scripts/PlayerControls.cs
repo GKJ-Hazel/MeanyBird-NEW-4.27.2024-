@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class PlayerControls : MonoBehaviour
@@ -8,7 +9,7 @@ public class PlayerControls : MonoBehaviour
     [Header("Game Controller Object for controlling the game")]
     public GameController gameController;
     [Header("Default Score")]
-        public float velocity = 5;
+    public float velocity = 5;
     //Physics for the bird
     private Rigidbody2D rb;
     //height of the bird object on the y axis
@@ -35,6 +36,18 @@ public class PlayerControls : MonoBehaviour
             //and float back down on Y axis
             rb.velocity = Vector2.up * velocity;
         }
+
     }
 
+    //function where the player collides with an object
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "HighSpike" || collision.gameObject.tag == "LowSpike" || collision.gameObject.tag == "Ground")
+        {
+            //Game is at a stopping state
+            Time.timeScale = 0;
+
+        }
+
+    }
 }
