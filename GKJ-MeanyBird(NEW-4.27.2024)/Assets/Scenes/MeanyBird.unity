@@ -877,9 +877,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7952644d1abcf2b43b5cbf364f169992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 0}
-  scoreCanvas: {fileID: 0}
-  spawner: {fileID: 0}
+  gameOverCanvas: {fileID: 5669031246613376452}
+  scoreCanvas: {fileID: 4420568019049001626}
+  spawner: {fileID: 1467730038}
 --- !u!4 &2072456315
 Transform:
   m_ObjectHideFlags: 0
@@ -1028,6 +1028,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc49c544ac07fab4799df520a69aa565, type: 3}
+--- !u!1 &4420568019049001626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4420568018785244674, guid: dc49c544ac07fab4799df520a69aa565, type: 3}
+  m_PrefabInstance: {fileID: 4420568019049001625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5669031246613376450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1138,9 +1143,14 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5826806107332298677, guid: 1fbc2b56f4b4cad41b29960ac8b40776, type: 3}
   m_PrefabInstance: {fileID: 5669031246613376450}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 5669031246613376452}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e4cf276accd1864ab16bb60d0d26acc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &5669031246613376452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5669031248249767612, guid: 1fbc2b56f4b4cad41b29960ac8b40776, type: 3}
+  m_PrefabInstance: {fileID: 5669031246613376450}
+  m_PrefabAsset: {fileID: 0}

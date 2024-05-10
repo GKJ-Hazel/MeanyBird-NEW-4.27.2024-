@@ -11,12 +11,12 @@ public class DestroyAfterTime : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    //Execute DestroyObjecet function based on timeToDestruction
-    Invoke("DestroyObject", timeToDestruction);
+        //Execute DestroyObjecet function based on timeToDestruction
+        Invoke("DestroyObject", timeToDestruction);
     }
 
     //This function will destroy this object
-    void DestroyMe () {
+    void DestroyObject () {
         //Destroy object
         Destroy (gameObject);
     }

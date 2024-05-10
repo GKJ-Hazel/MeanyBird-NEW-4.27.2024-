@@ -14,7 +14,7 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         //Start function repeating every 4 seconds
-        InvokeRepeating("InstatiateObjects", 1f, 4f);
+        InvokeRepeating("InstantiateObjects", 1f, 4f);
 
     }
 

@@ -28,10 +28,13 @@ public class GameController : MonoBehaviour
         //The spawner is showed in the game
         spawner.SetActive(true);
     }
-
-    // Update is called once per frame
-    void Update()
+    public void GameOver()
     {
-
+        //Game Over UI is visible
+        gameOverCanvas.SetActive(true);
+        //The spawner is now visible in the game
+        spawner.SetActive(false);
+        //The spawner is now at a stopping state
+        Time.timeScale = 0;
     }
 }
